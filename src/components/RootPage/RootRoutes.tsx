@@ -5,6 +5,8 @@ import { jwtDecode } from "jwt-decode";
 import Logout from "../Logout/Logout";
 import {LoginPage} from "../../screens/Login/LoginScreen";
 import {Register} from "../../screens/RegistrationScreen/RegistrationScreen";
+import {CarList} from "../../screens/Vehicle/VehicleScreen";
+import {ReservationHistory} from "../../screens/reservation/ReservationScreen";
 
 const RootRoutes = () => {
     return <AppRoutes />;
@@ -46,8 +48,8 @@ const AppRoutes = () => {
             <Route path="/dashboard" element={<Home />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<Register />} />
-            {/*<Route path="/vehicle" element={<CarList />} />*/}
-            {/*<Route path="/history" element={<ReservationHistory />} />*/}
+            <Route path="/vehicle" element={<CarList />} />
+            <Route path="/history" element={<ReservationHistory />} />
             <Route path="/logout" element={<Logout />} />
         </Routes>
     );
