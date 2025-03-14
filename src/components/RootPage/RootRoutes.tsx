@@ -3,6 +3,8 @@ import { Home } from "../../screens/Home/HomeScreen";
 import { useEffect } from "react";
 import { jwtDecode } from "jwt-decode";
 import Logout from "../Logout/Logout";
+import {LoginPage} from "../../screens/Login/LoginScreen";
+import {Register} from "../../screens/RegistrationScreen/RegistrationScreen";
 
 const RootRoutes = () => {
     return <AppRoutes />;
@@ -42,8 +44,8 @@ const AppRoutes = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Home />} />
-            {/*<Route path="/login" element={<LoginPage />} />*/}
-            {/*<Route path="/register" element={<Register />} />*/}
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<Register />} />
             {/*<Route path="/vehicle" element={<CarList />} />*/}
             {/*<Route path="/history" element={<ReservationHistory />} />*/}
             <Route path="/logout" element={<Logout />} />
